@@ -10,30 +10,25 @@ h2 {
 /* landing page */
 
 #landing-page {
-  background-image: url('./images/restaurant.jpg');
+  background-image: url('../images/bestr.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
 }
 
 .title {
-  color: rgb(234, 243, 243);
-  margin: auto;
-  font-size: 2rem;
+  color: rgb(238, 232, 232);
+  margin-left: 300px;
+  margin-bottom: 50px;
+  font-size: 5rem;
   padding: 10px;
-  text-align: center;
-}
-
-.title-background {
-  color: rgb(7, 7, 7);
-  width: fit-content;
 }
 
 /* nav-slider */
 
 .line {
-  background: #fff;
-  height: 3px;
+  background: rgb(239, 239, 240);
+  height: 5px;
   margin: 5px;
   width: 30px;
 }
@@ -50,7 +45,7 @@ h2 {
 /* nav-slider-section */
 
 .nav-slider-section {
-  background: rgb(29, 28, 28);
+  background: rgb(73, 69, 69);
   height: 100%;
   left: 0;
   position: fixed;
@@ -78,14 +73,15 @@ h2 {
 }
 
 .nav-links-container li {
+  text-decoration: none;
   text-align: center;
   padding: 10px;
 }
 
 .nav-links {
+  text-decoration: none;
   color: #fff;
   font-size: 1.5rem;
-  text-decoration: none;
 }
 
 .openNav {
@@ -127,8 +123,9 @@ h2 {
 
 p {
   color: #fff;
-  margin: 0;
-  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
 }
 
 .menu-price {
@@ -144,7 +141,6 @@ p {
 
 .restaurant-info-title {
   color: #fff;
-  text-align: center;
 }
 
 .info-container {
@@ -160,13 +156,13 @@ p {
 
 .address,
 .hours {
-  font-size: 1rem !important;
+  font-size: 1.3rem;
   text-align: center;
 }
 
 .contact {
   margin-bottom: 0;
-  font-size: 1em !important;
+  font-size: 1.3em;
   text-align: center;
 }
 
