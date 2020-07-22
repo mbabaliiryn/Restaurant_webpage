@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* landing page */
+
+#landing-page {
+  background-image: url('./images/restaurant.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.title {
+  color: rgb(234, 243, 243);
+  margin: auto;
+  font-size: 2rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.title-background {
+  color: rgb(7, 7, 7);
+  width: fit-content;
+}
+
+/* nav-slider */
+
+.line {
+  background: #fff;
+  height: 3px;
+  margin: 5px;
+  width: 30px;
+}
+
+.line:nth-child(1) {
+  margin-top: 0;
+}
+
+.nav-slider {
+  cursor: pointer;
+  padding: 15px;
+}
+
+/* nav-slider-section */
+
+.nav-slider-section {
+  background: rgb(29, 28, 28);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  transform: translateX(-100px);
+  top: 0;
+  width: 100%;
+}
+
+.close-nav-slider {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: red;
+  font-size: 1.5rem;
+  float: right;
+  outline: none;
+  padding: 15px;
+}
+
+.nav-links-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.nav-links-container li {
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-links {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.openNav {
+  animation: openNav 0.5s forwards;
+}
+
+.closeNav {
+  animation: openNav 0.5s forwards;
+}
+
+@keyframes openNav {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes closeNav {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* menu */
+
+#menu {
+  background: rgb(22, 22, 24);
+}
+
+.menu-title {
+  color: rgb(227, 220, 235);
+  font-size: 2rem;
+  padding: 25px;
+  text-align: center;
+}
+
+p {
+  color: #fff;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.menu-price {
+  float: left;
+}
+
+/* restaurant-info */
+
+#restaurant-info {
+  background: rgb(31, 31, 32);
+  padding: 20px;
+}
+
+.restaurant-info-title {
+  color: #fff;
+  text-align: center;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.address-content,
+.business-hours,
+.contact-content {
+  padding: 10px;
+}
+
+.address,
+.hours {
+  font-size: 1rem !important;
+  text-align: center;
+}
+
+.contact {
+  margin-bottom: 0;
+  font-size: 1em !important;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .info-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .address-content,
+  .business-hours {
+    border-right: 1px solid #fff;
+    padding: 30px;
+  }
+
+  .contact-content {
+    padding: 30px;
+  }
+}
