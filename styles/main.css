@@ -3,25 +3,25 @@ body {
   padding: 0;
 }
 
-h2 {
-  margin: 0;
-}
-
 /* landing page */
 
 #landing-page {
-  background-image: url('../images/bestr.jpeg');
+  background-image: url(/images/bestr.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  color: aliceblue;
+  padding: 20px;
+  margin: auto;
+  width: fit-content;
 }
 
 .title {
-  color: rgb(238, 232, 232);
-  margin-left: 300px;
-  margin-bottom: 50px;
-  font-size: 5rem;
-  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
 }
 
 /* nav-slider */
@@ -49,7 +49,7 @@ h2 {
   height: 100%;
   left: 0;
   position: fixed;
-  transform: translateX(-100px);
+  transform: translateX(-100%);
   top: 0;
   width: 100%;
 }
@@ -78,10 +78,15 @@ h2 {
   padding: 10px;
 }
 
-.nav-links {
+.nav-links-container,
+.nav-links-container ul {
+  font-size: 2rem;
+  list-style: none;
+}
+
+.nav-links-container a {
+  color: white;
   text-decoration: none;
-  color: #fff;
-  font-size: 1.5rem;
 }
 
 .openNav {
@@ -104,7 +109,7 @@ h2 {
   }
 
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
 

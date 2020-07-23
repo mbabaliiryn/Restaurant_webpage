@@ -4,8 +4,11 @@ let navSliderSection = document.querySelector('.nav-slider-section');
 let navLinks = document.querySelectorAll('.nav-links');
 
 openNav.onclick = function() {
+    navSliderSection.classList.add('openNav');
+}
+
+closeNav.onclick = function() {
     navSliderSection.classList.remove('openNav');
-    navSliderSection.classList.add('closeNav');
 }
 
 closeNav.onclick = closeNavSlider;
@@ -15,7 +18,5 @@ navLinks.forEach((link) => {
 });
 
 function closeNavSlider() {
-    console.log(navSliderSection.classList);
     navSliderSection.classList.remove('openNav');
-    navSliderSection.classList.add('closeNav');
 }

@@ -5,7 +5,7 @@ tabHeader.forEach((button) => {
 });
 
 function changeTabHeader() {
-  const tabNumber = paseInt(this.dataset.tab);
+  const tabNumber = parseInt(this.dataset.tab);
 
   document.querySelector('.active-tab').classList.remove('active-tab');
   this.classList.add('active-tab');
@@ -34,7 +34,6 @@ function changeTabSection(tabNumber) {
   currentTab.classList.add('hide-tab');
 
   const newSection = document.getElementById(`tabSection-${tabNumber}`);
-
 
   newSection.classList.remove('hide-tab');
   newSection.classList.add('show-tab');
