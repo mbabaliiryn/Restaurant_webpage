@@ -6,7 +6,7 @@ body {
 /* landing page */
 
 #landing-page {
-  background-image: url(/images/bestr.jpeg);
+  background-image: url(/dist/images/bestr.jpeg);
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@ h2 {
 
 .title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 /* nav-slider */
@@ -45,7 +45,7 @@ h2 {
 /* nav-slider-section */
 
 .nav-slider-section {
-  background: rgb(73, 69, 69);
+  background: rgb(24, 23, 23);
   height: 100%;
   left: 0;
   position: fixed;
@@ -58,8 +58,8 @@ h2 {
   background: transparent;
   border: none;
   cursor: pointer;
-  color: red;
-  font-size: 1.5rem;
+  color: rgb(6, 116, 12);
+  font-size: 2em;
   float: right;
   outline: none;
   padding: 15px;
@@ -146,6 +146,7 @@ p {
 
 .restaurant-info-title {
   color: #fff;
+  margin: 0;
 }
 
 .info-container {
@@ -174,15 +175,18 @@ p {
 @media screen and (min-width: 768px) {
   .info-container {
     grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
   }
 
   .address-content,
   .business-hours {
     border-right: 1px solid #fff;
     padding: 30px;
+    margin-left: 50px;
   }
 
   .contact-content {
     padding: 30px;
+    text-align: center;
   }
 }

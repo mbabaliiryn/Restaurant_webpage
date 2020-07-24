@@ -1,10 +1,24 @@
 {
   "name": "Restaurant_webpage",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^3.6.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -16,14 +30,5 @@
   "bugs": {
     "url": "https://github.com/mbabaliiryn/Restaurant_webpage/issues"
   },
-  "homepage": "https://github.com/mbabaliiryn/Restaurant_webpage#readme",
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "stylelint": "^13.6.1",
-    "stylelint-config-standard": "^20.0.0",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
-  }
+  "homepage": "https://github.com/mbabaliiryn/Restaurant_webpage#readme"
 }

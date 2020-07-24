@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/index.css">
-    <title>Restaurant</title>
+    <title>Sushi Bar</title>
 </head>
 <body>
     <main>
@@ -16,13 +14,13 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <header id="title">
-                <h2 class="title">Order with cash Restaurant</h2>
+            <header class="title-backgroung">
+                <h2 class="title">Delicious Buffet Restaurant</h2>
             </header>
         </section>
 
         <section class="nav-slider-section">
-            <botton class="close-nav-slider">X</botton>
+            <botton class="close-nav-slider ">close</botton>
             <section class="nav-links-container">
                 <ul>
                     <li class="nav-links"><a href="#menu">Menu</a></li>
@@ -36,37 +34,38 @@
             <section class="tabs-container">
                 <section id="tabs">
                     <button class="tabHeader active-tab" data-tab="1">Food</button>
-                    <button class="tabHeader"  data-tab="2">Drinks</button>
-                    <button class="tabHeader" data-tab="3" >Deserts</button>
-                    <button class="tabHeader" data-tab="4" >Starters</button>
+                    <button id="button"  class="tabHeader"  data-tab="2">Drinks</button>
+                    <button id="button"  class="tabHeader" data-tab="3" >Deserts</button>
+                    <button id="button"  class="tabHeader" data-tab="4" >Starters</button>
                 </section>
                 
                 <section id="tabSection-1" class="tabSection show-tab">
-                    <p>1. Spicy<span class="menu-price">$10.00</span></p>
+                    <p>1. Spicy Tuna<span class="menu-price">$10.00</span></p>
                     <p>2. YellowTail<span class="menu-price">$8.00</span></p>
                     <p>3. California Roll<span class="menu-price">$6.00</span></p>
                     <p>4. Spicy Salmon<span class="menu-price">$7.00</span></p>
                 </section>
                 <section id="tabSection-2" class="tabSection hide-tab">
-                    <p>1. Passion Drink<span class="menu-price">$10.00</span></p>
-                    <p>2.   CockTail<span class="menu-price">$8.00</span></p>
-                    <p>3. Apple Tail<span class="menu-price">$6.00</span></p>
-                    <p>4. Beers<span class="menu-price">$7.00</span></p>
-                </section>
-                <section id="tabSection-3" class="tabSection hide-tab">
-                    <p>1. Pineapples<span class="menu-price">$10.00</span></p>
-                    <p>2. Watermerons<span class="menu-price">$8.00</span></p>
-                    <p>3. Apples<span class="menu-price">$6.00</span></p>
-                    <p>4. lemons<span class="menu-price">$7.00</span></p>
-                </section>
-                <section id="tabSection-4" class="tabSection hide-tab">
                     <p>1. Tuna<span class="menu-price">$10.00</span></p>
                     <p>2. YellowTail<span class="menu-price">$8.00</span></p>
+                    <p>3. California<span class="menu-price">$6.00</span></p>
+                    <p>4. Spicy Salmon<span class="menu-price">$7.00</span></p>
+                </section>
+                <section id="tabSection-3" class="tabSection hide-tab">
+                    <p>1. Spicy <span class="menu-price">$10.00</span></p>
+                    <p>2. YellowTail<span class="menu-price">$8.00</span></p>
+                    <p>3. California Roll<span class="menu-price">$6.00</span></p>
+                    <p>4. Salmon<span class="menu-price">$7.00</span></p>
+                </section>
+                <section id="tabSection-4" class="tabSection hide-tab">
+                    <p>1. Spicy Tuna<span class="menu-price">$10.00</span></p>
+                    <p>2. YellowTail<span class="menu-price">$8.00</span></p>
                     <p>3. Roll<span class="menu-price">$6.00</span></p>
-                    <p>4.Salmon<span class="menu-price">$7.00</span></p>
+                    <p>4. Spicy Salmon<span class="menu-price">$7.00</span></p>
                 </section>
             </section>
         </section>
+
 
         <section id="restaurant-info">
             <section class="info-container">
@@ -87,7 +86,6 @@
             </section>
         </section>
     </main>
-<script src="../src/index.js"></script>
-<script src="./main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

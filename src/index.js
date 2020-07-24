@@ -1,40 +1,30 @@
-const tabHeader = document.querySelectorAll('.tabHeader');
 
-tabHeader.forEach((button) => {
-  button.onclick = changeTabHeader;
+import { tabHeader, changeTabHeader } from './changeTabHeader';
+import  { changeTabSection } from './changeTabSection';
+
+import '../styles/main.css';
+import '../styles/index.css';
+
+const openNav = document.querySelector('.nav-slider');
+const closeNav = document.querySelector('.close-nav-slider');
+const navSliderSection = document.querySelector('.nav-slider-section');
+const navLinks = document.querySelectorAll('.nav-links');
+
+openNav.onclick = function () {
+  navSliderSection.classList.add('openNav');
+};
+
+closeNav.onclick = function () {
+  navSliderSection.classList.remove('openNav');
+};
+
+
+closeNav.onclick = closeNavSlider;
+
+navLinks.forEach((link) => {
+  link.onclick = closeNavSlider;
 });
 
-function changeTabHeader() {
-  const tabNumber = parseInt(this.dataset.tab);
-
-  document.querySelector('.active-tab').classList.remove('active-tab');
-  this.classList.add('active-tab');
-
-  switch (tabNumber) {
-    case 1:
-      changeTabSection(tabNumber);
-      break;
-    case 2:
-      changeTabSection(tabNumber);
-      break;
-    case 3:
-      changeTabSection(tabNumber);
-      break;
-    case 4:
-      changeTabSection(tabNumber);
-      break;
-    default:
-      break;
-  }
-}
-
-function changeTabSection(tabNumber) {
-  const currentTab = document.querySelector('.show-tab');
-  currentTab.classList.remove('show-tab');
-  currentTab.classList.add('hide-tab');
-
-  const newSection = document.getElementById(`tabSection-${tabNumber}`);
-
-  newSection.classList.remove('hide-tab');
-  newSection.classList.add('show-tab');
+function closeNavSlider() {
+  navSliderSection.classList.remove('openNav');
 }
