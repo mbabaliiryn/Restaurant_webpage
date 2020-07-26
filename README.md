@@ -24,7 +24,7 @@ The project displays the restaurant information and the menu.
 
 ## Live demo
 
-[Check it out](https://engineerplatform.herokuapp.com/users/sign_in)
+[Check it out](https://mbabaliiryn.github.io/Restaurant_webpage/dist/index.html)
 
 # Get Started
 - clone the repository
