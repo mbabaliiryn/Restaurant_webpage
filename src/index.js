@@ -1,6 +1,10 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable func-names */
+/* eslint-disable import/named */
+/* eslint-disable no-unused-vars */
 
-import { tabHeader, changeTabHeader } from './changeTabHeader';
-import  { changeTabSection } from './changeTabSection';
+import { btn, tabContents, tabHeader } from './changeTabHeader';
+import { changeTabSection } from './changeTabSection';
 
 import '../styles/main.css';
 import '../styles/index.css';

@@ -13,9 +13,9 @@ body {
 }
 
 h2 {
-  color: aliceblue;
+  color: rgb(229, 235, 240);
   padding: 20px;
-  margin: auto;
+  margin: 0 auto;
   width: fit-content;
 }
 
@@ -130,6 +130,7 @@ p {
   color: #fff;
   display: flex;
   justify-content: space-between;
+  width: 95%;
   font-size: 1.5rem;
 }
 
@@ -146,7 +147,7 @@ p {
 
 .restaurant-info-title {
   color: #fff;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .info-container {
@@ -164,12 +165,14 @@ p {
 .hours {
   font-size: 1.3rem;
   text-align: center;
+  margin-left: 100px;
 }
 
 .contact {
-  margin-bottom: 0;
+  margin: 0 auto;
   font-size: 1.3em;
   text-align: center;
+  margin-left: 100px;
 }
 
 @media screen and (min-width: 768px) {
@@ -183,6 +186,7 @@ p {
     border-right: 1px solid #fff;
     padding: 30px;
     margin-left: 50px;
+    text-align: center;
   }
 
   .contact-content {

@@ -9,4 +9,4 @@ function changeTabSection(tabNumber) {
   newSection.classList.remove('hide-tab');
   newSection.classList.add('show-tab');
 }
-export default {changeTabSection};
+export default { changeTabSection };

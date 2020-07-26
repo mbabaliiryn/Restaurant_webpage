@@ -1,36 +1,21 @@
 
-const tabHeader = document.querySelectorAll('.tabHeader');
+const btn = document.getElementById('tabs');
+const tabContents = document
+  .getElementById('tabs-content')
+  .getElementsByTagName('section');
+const tabHeader = btn.getElementsByTagName('button');
 
-
-const changeTabHeader = () => {
-  let button = document.getElementById('button');
-  let tab = button.getAttribute('data-tab');
-    const tabNumber = parseInt(tab);
-  
-    document.querySelector('.active-tab').classList.remove('active-tab');
-    this.classList.add('active-tab');
-  
-    switch (tabNumber) {
-      case 1:
-        changeTabSection(tabNumber);
-        break;
-      case 2:
-        changeTabSection(tabNumber);
-        break;
-      case 3:
-        changeTabSection(tabNumber);
-        break;
-      case 4:
-        changeTabSection(tabNumber);
-        break;
-      default:
-        break;
+btn.addEventListener('click', (e) => {
+  const button = e.target.nodeName === 'BUTTON';
+  if (!button) return;
+  const tabs = e.target.dataset.tab;
+  const tabContent = document.getElementById(`tabSection-${tabs}`);
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i < tabContents.length; i++) {
+    if (tabContents[i] !== tabContents[tabs - 1]) {
+      tabContents[i].classList.remove('show-tab');
     }
+    tabContent.classList.add('show-tab');
   }
-
-tabHeader.forEach((button) => {
-  button.onclick = changeTabHeader;
 });
-  export {tabHeader, changeTabHeader};
-
-  
+export { btn, tabContents, tabHeader };
