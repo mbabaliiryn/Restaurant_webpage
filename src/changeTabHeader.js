@@ -1,4 +1,3 @@
-
 const btn = document.getElementById('tabs');
 const tabContents = document
   .getElementById('tabs-content')
@@ -10,6 +9,7 @@ btn.addEventListener('click', (e) => {
   if (!button) return;
   const tabs = e.target.dataset.tab;
   const tabContent = document.getElementById(`tabSection-${tabs}`);
+
   // eslint-disable-next-line no-plusplus
   for (let i = 0; i < tabContents.length; i++) {
     if (tabContents[i] !== tabContents[tabs - 1]) {

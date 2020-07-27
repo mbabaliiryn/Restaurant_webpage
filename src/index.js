@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-use-before-define */
 /* eslint-disable func-names */
 /* eslint-disable import/named */
@@ -32,3 +33,5 @@ navLinks.forEach((link) => {
 function closeNavSlider() {
   navSliderSection.classList.remove('openNav');
 }
+const footerSection = footer();
+document.appendChild(footerSection);
