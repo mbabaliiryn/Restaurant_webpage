@@ -9,20 +9,20 @@ function loadSite() {
 
   // create page content
   const title2 = document.createElement('h2');
-  title2.textContent = 'Hello, I am Alex Cole. Buy my hole!';
+  title2.textContent = 'Hello, I am Irene, welcome to my Restuarant!';
 
   const logo = document.createElement('img');
-  logo.src = './images/holes.png';
+  logo.src = 'https://www.mumbaifoodie.com/wp-content/uploads/2018/10/Global-Fusion.jpg';
   logo.id = 'logo';
 
   const title = document.createElement('h1');
-  title.textContent = 'Alex Cole\'s Donut Holes';
+  title.textContent = 'Delicious Buffet Restaurant';
 
   const copy = document.createElement('p');
-  copy.textContent = 'Welcome to my donut shop. We sell the greatest quality donut holes in all of the United States. Our mission is to provide you with the fluffiest, glaziest, most scrumptious holes you have ever laid your tongue upon.';
+  copy.textContent = 'Welcome to my delicious buffet restaurant. We sell the greatest quality buffets. Our mission is to provide you with the  most scrumptious foods you have ever laid your tongue upon.';
 
   const copy2 = document.createElement('p');
-  copy2.textContent = 'We source our flour from the great plains of the sky, ensuring our holes are the fluffiest. We gather our yeast from... other holes, ensuring it is natural and GMO free. We use glaze with shine that rivals that of a mirror. Lastly, our sugar. We use the finest grain, pixie dust-esque, almost inhalable sugar to commit to the promise of being the most scrumptious hole ever to have the pleasure of being inside you.';
+  copy2.textContent = 'We source our products from the great plains of the sky.';
 
   // Adds elements in proper order
   content.appendChild(title);

@@ -2,7 +2,7 @@ import loadSite from './loadSite';
 import loadMenu from './loadMenu';
 import loadContact from './loadContact';
 
-import './css/styles.css';
+import './css/style.css';
 
 
 loadSite();

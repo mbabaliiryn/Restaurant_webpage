@@ -11,23 +11,23 @@ function loadContact() {
   address.textContent = 'Address';
 
   const address1 = document.createElement('h2');
-  address1.textContent = '42 Hole Avenue, California, United States';
+  address1.textContent = '5th street, buglobi Industrial area';
 
   const email = document.createElement('h1');
   email.textContent = 'E-mail';
 
   const email1 = document.createElement('h2');
-  email1.textContent = 'MrColesHoles@gmail.com';
+  email1.textContent = 'mbabaliiryn!gmail.com';
 
   const phone = document.createElement('h1');
-  phone.textContent = 'Phone';
+  phone.textContent = 'Contact';
 
   const phone1 = document.createElement('h2');
-  phone1.textContent = '(707) 342 - 6926';
+  phone1.textContent = '(758) 32 - 3723';
 
   // create page content
   const title = document.createElement('h1');
-  title.textContent = 'Contact Us!';
+  title.textContent = 'Reach Out!';
 
   // append page content to content div
   content.append(title, address, address1, email, email1, phone, phone1);

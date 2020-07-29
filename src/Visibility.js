@@ -5,4 +5,4 @@ function hide(id) {
   document.getElementById(id).style.visibility = 'hidden';
 }
 
-export {show, hide };
+export { show, hide };
