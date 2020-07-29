@@ -1,37 +1,55 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-use-before-define */
-/* eslint-disable func-names */
-/* eslint-disable import/named */
-/* eslint-disable no-unused-vars */
+import loadSite from './loadSite';
+import loadMenu from './loadMenu';
+import loadContact from './loadContact';
 
-import { btn, tabContents, tabHeader } from './changeTabHeader';
-import { changeTabSection } from './changeTabSection';
-
-import '../styles/main.css';
-import '../styles/index.css';
-
-const openNav = document.querySelector('.nav-slider');
-const closeNav = document.querySelector('.close-nav-slider');
-const navSliderSection = document.querySelector('.nav-slider-section');
-const navLinks = document.querySelectorAll('.nav-links');
-
-openNav.onclick = function () {
-  navSliderSection.classList.add('openNav');
-};
-
-closeNav.onclick = function () {
-  navSliderSection.classList.remove('openNav');
-};
+import './css/styles.css';
 
 
-closeNav.onclick = closeNavSlider;
+loadSite();
 
-navLinks.forEach((link) => {
-  link.onclick = closeNavSlider;
-});
+function listeners() {
+// Selects nav div
+  const nav = document.querySelector('#nav');
 
-function closeNavSlider() {
-  navSliderSection.classList.remove('openNav');
+  //  Creates nav radio buttons & adds event listeners
+  const homeLabel = document.createElement('label');
+  const homeSpan = document.createElement('span');
+  homeSpan.textContent = 'Home';
+  const home = document.createElement('input');
+  home.setAttribute('type', 'radio');
+  home.setAttribute('name', 'tab-control');
+  home.checked = true;
+  homeLabel.className = 'newRadio';
+  homeLabel.addEventListener('click', loadSite);
+  homeLabel.append(home);
+  homeLabel.append(homeSpan);
+
+  const menuLabel = document.createElement('label');
+  const menuSpan = document.createElement('span');
+  menuSpan.textContent = 'Menu';
+  const menu = document.createElement('input');
+  menu.setAttribute('type', 'radio');
+  menu.setAttribute('name', 'tab-control');
+  menuLabel.className = 'newRadio';
+  menuLabel.addEventListener('click', loadMenu);
+  menuLabel.append(menu);
+  menuLabel.append(menuSpan);
+
+  const contactLabel = document.createElement('label');
+  const contactSpan = document.createElement('span');
+  contactSpan.textContent = 'Contact';
+  const contact = document.createElement('input');
+  contact.setAttribute('type', 'radio');
+  contact.setAttribute('name', 'tab-control');
+  contactLabel.className = 'newRadio';
+  contactLabel.addEventListener('click', loadContact);
+  contactLabel.append(contact);
+  contactLabel.append(contactSpan);
+
+  // Adds elements in proper order
+  nav.appendChild(homeLabel);
+  nav.appendChild(menuLabel);
+  nav.appendChild(contactLabel);
 }
-const footerSection = footer();
-document.appendChild(footerSection);
+
+listeners();
