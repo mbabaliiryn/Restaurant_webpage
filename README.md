@@ -1,4 +1,4 @@
-# Developer Platform
+# Restaurant Page
 The project displays the restaurant information and the menu.
 
 # Build with
