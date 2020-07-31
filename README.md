@@ -19,12 +19,11 @@ The project displays the restaurant information and the menu.
 - Run `npx eslint . --fix` to auto fix code errors in js files.
 
 
-![screenshot](![rest](https://user-images.githubusercontent.com/44978186/88474291-8fb98700-cf2d-11ea-9152-e10770075cdb.png)
-)
+![Screenshot from 2020-07-30 11-58-49](https://user-images.githubusercontent.com/44978186/88903291-20f56a00-d25c-11ea-9fe0-0abc5d117c6a.png)
 
 ## Live demo
 
-[Check it out](https://mbabaliiryn.github.io/Restaurant_webpage/dist/index.html)
+[Check it out](https://infallible-jackson-fd6577.netlify.app/)
 
 # Get Started
 - clone the repository
