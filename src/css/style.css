@@ -1,0 +1,108 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url('./images/bestr.jpeg');
+}
+
+p {
+  font-size: 22px;
+}
+
+#container {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+#nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 75px;
+  height: 700px;
+  border-radius: 10px;
+  float: left;
+  background-color: rgba(192, 9, 248, 0.9);
+  padding: 10px;
+  margin-right: 25px;
+  text-align: center;
+}
+
+input[type="radio"]:checked ~ span {
+  font-weight: bold;
+  border-color: black;
+  font-size: 25px;
+}
+
+.newRadio {
+  font-size: 20px;
+  margin: 100px 0 0 0;
+  cursor: grab;
+}
+
+#nav input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+#grid {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 75px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.item {
+  height: 300px;
+  width: 250px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menuText {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 20px;
+  background-color: rgba(240, 240, 240, 0.8);
+}
+
+.menuText * {
+  padding: 5px;
+}
+
+#logo {
+  height: 300px;
+  width: 300px;
+}
+
+#content {
+  width: 1060px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(240, 240, 240, 0.9);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
